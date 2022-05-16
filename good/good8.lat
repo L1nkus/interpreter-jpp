@@ -1,0 +1,13 @@
+// Closure in nested functions.
+int times6(int n){
+    int three = 3;
+    int times3(int m){
+        return m * three;
+    }
+    return times3(n) * 2;
+}
+
+int main() {
+    print(times6(2));
+    return 0;
+}

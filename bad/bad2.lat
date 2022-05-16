@@ -1,0 +1,5 @@
+// redeclaration of variable
+int main() {
+    int x, x;
+	return 0 ;
+}

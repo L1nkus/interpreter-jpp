@@ -1,0 +1,9 @@
+// Repeated argument name
+int f(int x, int x) {
+   return x;
+}
+
+int main(){
+    print(f(2,3));
+    return 0;
+}

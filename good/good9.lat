@@ -1,0 +1,30 @@
+// Lambdas, passing lambdas as variables, anonymous calls, higher order functions, passing argument by reference
+
+int main(){
+    void fun2(int &x, int y){
+        x = 2;
+        y = 2;
+        void fun3(int &x){
+            x++;
+            if(x == 10){
+                return;
+            }
+            return fun3(x);
+        }
+        return fun3(x);
+    }
+    int x = 37;
+    int y = 27;
+    fun2(x, y);
+    print(x); // 10
+    print(y); // 27
+    print(int(int a, int b)->{return a + b;}(2,3)); // 5
+    int(int,int) xd = int(int a, int b)->{return a + b;}; // 10
+    print(xd(5,5));
+    void f(int(int,int) l){
+        print(l(2,1));
+        return;
+    }
+    f(xd); // 3
+    return 0;
+}

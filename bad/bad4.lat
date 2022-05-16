@@ -1,0 +1,5 @@
+// returning non-int
+
+int main() {
+     return true;
+}

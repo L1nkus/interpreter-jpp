@@ -1,0 +1,8 @@
+// Redeclaration in same block.
+
+int main(){
+    int x = 5;
+    print(x);
+    int x = 6;
+    return 0;
+}

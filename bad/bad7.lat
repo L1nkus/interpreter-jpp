@@ -1,0 +1,10 @@
+// Break outside of loop, statically checked.
+
+int main(){
+    if(false){
+        break;
+        continue;
+        return "x";
+    }
+    return 0;
+}
